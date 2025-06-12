@@ -34,7 +34,7 @@ public class FileDownloadTest {
 
         // Verify file is downloaded
         File dir = new File(downloadFilepath);
-        File[] files = dir.listFiles((d, name) -> name.endsWith(".pdf")); // Example: expecting a PDF file
+        File[] files = dir.listFiles((d, name) -> name.endsWith(".txt")); // Example: expecting a txt file
         assert files != null && files.length > 0 : "File not downloaded!";
     }
 
